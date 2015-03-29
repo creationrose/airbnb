@@ -22,7 +22,7 @@ gem 'pry'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'devise'
 gem 'factory_girl'
-
+gem 'textacular'
 
 group :development do
   gem 'byebug'  # Call 'byebug' anywhere in the code to stop execution and get a debugger console

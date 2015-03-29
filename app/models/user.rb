@@ -13,6 +13,18 @@ end
 
 ##MY NOTES##
 
+
+# MAIL THROUGH MODELS:
+# after_create :send_registration_confirmation
+#
+# def send_registration_confirmation
+#   UserMailer.deliver_registration_confirmation(self)
+# end
+
+
+
+
+
 #Other:  :omniauthable
 
 # database_authenticatable – ensures that a user enters a correct password, and it encrypts the said password, before saving it.
