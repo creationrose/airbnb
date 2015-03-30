@@ -1,7 +1,10 @@
-#Air B&B Clone
+#AirStay
 
-Site allows users upload photos, check listings and message between one another
-to find a room for upcoming vacations!
+Work in progress
+
+Site allows users upload photos, check listings and message between one another to find a room for upcoming vacations!
+
+Live at: https://airstay.herokuapp.com/
 
 ##Author
 

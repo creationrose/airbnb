@@ -22,7 +22,7 @@ gem 'pry'
 gem "paperclip", :git => "git://github.com/thoughtbot/paperclip.git"
 gem 'devise'
 gem 'factory_girl'
-gem 'textacular'
+#gem 'textacular'
 gem "kaminari"
 gem 'simple_token_authentication'
 gem 'bootstrap-sass', :git => 'https://github.com/twbs/bootstrap-sass.git', :branch => 'next'
