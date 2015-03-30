@@ -17,35 +17,8 @@ Rails.application.configure do
 
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true  #(Usually false. Do care when true)
-
-
-  config.action_mailer.delivery_method = :smtp
-
-  config.action_mailer.smtp_settings = {
-    :address        => "smtp.gmail.com",
-    :port           => 587,
-    :domain         => 'www.google.com',
-    :authentication => :login,
-    :user_name      => "ladyjtm@gmail.com",
-    :password       => 'secret'
-
-  }
-
-  #
-
-  #Heroku and Mailgun
-  #heroku addons:add mailgun:<PLAN>
-  # ActionMailer::Base.smtp_settings = {
-  #   :port           => ENV['MAILGUN_SMTP_PORT'],
-  #   :address        => ENV['MAILGUN_SMTP_SERVER'],
-  #   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
-  #   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
-  #   :domain         => 'yourapp.heroku.com',
-  #   :authentication => :plain,
-  # }
-  # ActionMailer::Base.delivery_method = :smtp
-
-
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.delivery_method = :letter_opener
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
@@ -69,4 +42,42 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+
+
+  # config.assets.initialize_on_precompile = false
 end
+
+
+
+
+
+
+
+
+
+
+
+# config.action_mailer.delivery_method = :smtp
+# config.action_mailer.default :charset => "utf-8"
+# config.action_mailer.smtp_settings = {
+#   :address        => "smtp.gmail.com",
+#   :port           => 587,
+#   :domain         => 'www.google.com',
+#   :authentication => :login,
+#   :user_name      => "mail@gmail.com",
+#   :password       => "www",
+#   enable_starttls_auto: true }
+
+#
+
+#Heroku and Mailgun
+#heroku addons:add mailgun:<PLAN>
+# ActionMailer::Base.smtp_settings = {
+#   :port           => ENV['MAILGUN_SMTP_PORT'],
+#   :address        => ENV['MAILGUN_SMTP_SERVER'],
+#   :user_name      => ENV['MAILGUN_SMTP_LOGIN'],
+#   :password       => ENV['MAILGUN_SMTP_PASSWORD'],
+#   :domain         => 'yourapp.heroku.com',
+#   :authentication => :plain,
+# }
+# ActionMailer::Base.delivery_method = :smtp
