@@ -22,11 +22,11 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    :address        => "smtp.example.com",
-    :port           => 25,
-    :domain         => 'www.example.com',
+    :address        => "smtp.gmail.com",
+    :port           => 587,
+    :domain         => 'www.google.com',
     :authentication => :login,
-    :user_name      => "www",
+    :user_name      => "ladyjtm@gmail.com",
     :password       => 'secret'
 
   }
@@ -44,9 +44,6 @@ Rails.application.configure do
   #   :authentication => :plain,
   # }
   # ActionMailer::Base.delivery_method = :smtp
-
-
-
 
 
 

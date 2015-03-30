@@ -1,4 +1,8 @@
 class User < ActiveRecord::Base
+
+#  has_many :authentications
+  #acts_as_token_authenticatable
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable, :timeoutable
@@ -25,7 +29,7 @@ end
 
 
 
-#Other:  :omniauthable
+#Other:  :omniauthable, invitable
 
 # database_authenticatable – ensures that a user enters a correct password, and it encrypts the said password, before saving it.
 
