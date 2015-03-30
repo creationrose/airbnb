@@ -25,6 +25,9 @@ gem 'factory_girl'
 gem 'textacular'
 gem "kaminari"
 gem 'simple_token_authentication'
+gem 'bootstrap-sass', '~> 3.2.0'
+gem 'autoprefixer-rails'
+
 
 group :development do
   gem 'byebug'  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
